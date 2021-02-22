@@ -1,0 +1,25 @@
+function [state_dot] = blockfun(state_start, F,m)
+    % state = [xdot;x]
+    %F = m*ddx => ddx = F/m
+    %dx = derivative(x)
+    state_dot = [0; 0];
+        
+    B = [ 1 1;
+        0 1];
+    
+    x = state_start(1:2);
+    z = state_start(3:4);
+    
+    alpha = 10^(-3);
+    A = [ x(1)^2 x(2);
+        0 x(2)^2];
+    
+    A = A + alpha*eye(2);
+    
+    epsilon  =  0;
+    state_dot(3:4) = (1/10 * x -  * A * z) / epsilon;
+    
+    state_dot(1:2) =-   
+    
+
+end

@@ -1,0 +1,4 @@
+%To Do
+%Finn ut av semilogarithmic plot av residuals på 1b)
+%Kom med en vitenskapelig forklaring på 1c)
+%Fiks 1d)
